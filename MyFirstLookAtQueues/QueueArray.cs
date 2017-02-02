@@ -10,7 +10,7 @@ namespace MyFirstLookAtQueues
 
         private int _size = 0;
 
-        public void AddtoQueue(T item)
+        public virtual void AddtoQueue(T item)
         {
 
             if (_size == _array.Length)

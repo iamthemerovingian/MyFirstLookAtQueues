@@ -15,8 +15,32 @@ namespace MyFirstLookAtQueues
 
             QueueArray<int> queueArray = new QueueArray<int>();
             QueueExperiement2(queueArray);
+
+            PriorityQueue<int> priorityQueue = new PriorityQueue<int>();
+            QueueExperiement3(priorityQueue);
         }
 
+        private static void QueueExperiement3(PriorityQueue<int> queue)
+        {
+            queue.AddtoQueue(1);
+            queue.AddtoQueue(2);
+            queue.AddtoQueue(3);
+            queue.AddtoQueue(4);
+            queue.DeQueue();
+            queue.DeQueue();
+            queue.DeQueue();
+            queue.AddtoQueue(5);
+            queue.AddtoQueue(6);
+            queue.DeQueue();
+            queue.AddtoQueue(7);
+            queue.AddtoQueue(8);
+            queue.DeQueue();
+            queue.DeQueue();
+            queue.DeQueue();
+            queue.AddtoQueue(9);
+            queue.DeQueue();
+            queue.DeQueue();
+        }
         private static void QueueExperiement2(QueueArray<int> queue)
         {
             queue.AddtoQueue(1);

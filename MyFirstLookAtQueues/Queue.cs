@@ -2,11 +2,11 @@
 
 namespace MyFirstLookAtQueues
 {
-    class Queue<T> : System.Collections.Generic.IEnumerable<T>
+    public class Queue<T> : System.Collections.Generic.IEnumerable<T>
     {
-        private System.Collections.Generic.LinkedList<T> _list = new System.Collections.Generic.LinkedList<T>();
+        protected System.Collections.Generic.LinkedList<T> _list = new System.Collections.Generic.LinkedList<T>();
 
-        public void AddtoQueue(T item)
+        public virtual void AddtoQueue(T item)
         {
             _list.AddLast(item);
         }
